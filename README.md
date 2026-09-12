@@ -227,14 +227,14 @@ The endpoint returned the expected graph JSON, confirming that Nginx could reach
 
 # Extra problems
 
-* **Missing `python3-venv` package (5–10 min)** — The Python virtual environment could not be created because the required package was not installed.
+* **Missing `python3-venv` package ** — The Python virtual environment could not be created because the required package was not installed.
 
-* **DNS configuration (10–15 min)** — External domains could not initially be resolved, so `apt` and other network commands failed.
+* **DNS configuration ** — External domains could not initially be resolved, so `apt` and other network commands failed.
 
-* **PyPI connectivity (10–15 min)** — The default PyPI server timed out, so I tested connectivity and used an alternative mirror.
+* **PyPI connectivity ** — The default PyPI server timed out, so I tested connectivity and used an alternative mirror.
 
-* **Docker Compose command/package (5 min)** — The Docker Compose command was initially unavailable, so the required Compose package was installed.
+* **Docker Compose command/package ** — The Docker Compose command was initially unavailable, so the required Compose package was installed.
 
-* **Initial PostgreSQL diagnosis (10–15 min)** — I first suspected PostgreSQL startup timing, but inspection showed that the real problem was the Docker network configuration.
+* **Initial PostgreSQL diagnosis ** — I first suspected PostgreSQL startup timing, but inspection showed that the real problem was the Docker network configuration.
 
-* **Testing the wrong `/` endpoint (a few minutes)** — I initially tested `/`, which returned `404`. I then checked the application routes and found that `/graph` was the intended endpoint.
+* **Testing the wrong `/` endpoint ** — I initially tested `/`, which returned `404`. I then checked the application routes and found that `/graph` was the intended endpoint.
