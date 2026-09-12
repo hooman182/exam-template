@@ -2,6 +2,7 @@
 - name: Check SSH connection
   hosts: all
   gather_facts: false
+
   tasks:
     - name: Test SSH connection
       ansible.builtin.ping:
@@ -12,6 +13,7 @@
 - name: Deploy monitoring stack
   hosts: monitoring
   become: true
+
   roles:
     - { role: monitoring, tags: prometheus }
     ### OR
